@@ -39,4 +39,22 @@ Claim free test tokens to cover gas fees:
 3. Paste the contract code
 4. Compile with **Solidity 0.8.20**
 5. Connect MetaMask → select **Flow EVM Testnet**
-6. Deploy with constructor arguments:  
+6. Deploy with constructor arguments:
+
+
+## 🧠 How It Works
+
+- The **owner** deploys the contract with a list of proposals.
+- Anyone can **vote once** for their preferred proposal.
+- The **owner** can close voting anytime.
+- Once closed, anyone can call `getWinningProposal()` to view the winner.
+
+---
+
+## 💡 Future Improvements
+
+- Allow multiple voting sessions.
+- Add on-chain proposal creation.
+- Integrate with a simple front-end DApp.
+- Add off-chain storage for proposal details.
+
